@@ -113,6 +113,7 @@
         }
         
         .card {
+            background-color: rgb(210, 222, 228);
             width: 340px;
             height: 250px;
             margin: 20px;
@@ -120,22 +121,31 @@
             padding: 20px;
             margin-left: 80px;
             margin-bottom: 40px;
-            border: 2px solid rgb(253, 254, 253);
+            border: 2px solid rgb(10, 10, 10);
             border-radius: 20px;
-            box-shadow: 0px 2px 4px rgba(179, 18, 174, 0.3);
+            box-shadow: 1px 2px 4px 2px rgba(46, 6, 45, 0.3);
             display: inline-block;
             vertical-align: top;
             text-align: center;
+        }
+        .card:hover{
+            
+            box-shadow: 1px 1px 2px 3px rgb(48, 47, 47);
         }
         
         .card img {
             width: 270px;
             height: 170px;
             margin-bottom: 10px;
-            border: 1px solid rgb(9, 9, 9);
+            border: 2px solid rgb(9, 9, 9);
+            border-radius: 10px;
+        }
+        .card img:hover{
+            transform: scale(1.05);
         }
         
         .card button {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background-color: #f3ecf2;
             color: rgb(0, 0, 0);
             padding: 10px 20px;
@@ -148,11 +158,12 @@
         }
         
         .card button:hover {
-            background-color: #cf60d5;
+            background-color: #fc7e7e;
+            box-shadow: 1px 2px 2px 1px  black;
         }
         
         .card-name {
-            color: white;
+            color: rgb(0, 0, 0);
             font-size: 20px;
         }
         
