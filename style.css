@@ -103,7 +103,7 @@ body {
 }
 
 .card {
-    background-color: rgb(210, 222, 228);
+    background-color: white;
     width: 340px;
     height: 250px;
     margin: 20px;
@@ -111,28 +111,24 @@ body {
     padding: 20px;
     margin-left: 80px;
     margin-bottom: 40px;
-    border: 2px solid rgb(10, 10, 10);
+    border: 1.5px solid rgb(10, 10, 10);
     border-radius: 20px;
-    box-shadow: 1px 2px 4px 2px rgba(46, 6, 45, 0.3);
+    box-shadow: 1px 2px 4px 2px hwb(0 63% 5%);
     display: inline-block;
     vertical-align: top;
     text-align: center;
 }
 
 .card:hover {
-    box-shadow: 1px 1px 2px 3px rgb(48, 47, 47);
+    box-shadow: 1px 1px 2px 3px hwb(0 63% 5%);
 }
 
 .card img {
     width: 270px;
     height: 170px;
     margin-bottom: 10px;
-    border: 2px solid rgb(9, 9, 9);
+    border: 2px solid rgb(60, 58, 58);
     border-radius: 10px;
-}
-
-.card img:hover {
-    transform: scale(1.05);
 }
 
 .card button {
