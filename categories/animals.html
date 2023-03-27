@@ -84,8 +84,9 @@ nav ul {
         padding: 20px;
         text-align: center;
         width: 300px;
-        margin: 50px auto;
+        margin:  100px auto;
         height: 450px;
+       
       }
       
       .card img {
@@ -101,8 +102,9 @@ nav ul {
         padding: 15px 20px;
         margin-bottom: 10px;
         box-sizing: border-box;
-        border: 4px double rgb(16, 17, 16) ;
+        border: 2px solid rgb(16, 17, 16) ;
         border-bottom: 1px solid #ddd;
+        background-color: hwb(0 63% 5%);
       }
       
       button {
@@ -119,7 +121,103 @@ nav ul {
       button:hover {
         opacity: 0.8;
         box-shadow: 1px 2px 1px 2px ;
+        
       }
+              
+      #navbar {
+            background-color: hwb(0 63% 5%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+            height: 70px;
+            margin: -5px;
+            margin-top: -2px;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+            position: absolute;
+            
+        }
+        
+        .search-box {
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 130%;
+            height: 40px;
+            border: none;
+            outline: none;
+            background: #f2f2f2;
+            border-radius: 30px;
+            color: black;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 40px;
+            text-align: center;
+            margin-left: 300px;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items {
+            text-decoration: none;
+            margin-left: 180px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 18px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items:hover {
+            background-color: #c437e0;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items1 {
+            text-decoration: none;
+            margin-left: 40px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 40px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items1:hover {
+            background-color: #bd46c2;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items2 {
+            text-decoration: none;
+            margin-left: 5px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 40px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items2:hover {
+            background-color: #bd46c2;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items-container {
+            float: left;
+            margin-left: 300px;
+            width: 100%;
+        }
       .footer {
             position: relative;
             background-color: hwb(0 63% 5%);
@@ -247,22 +345,38 @@ nav ul {
     </style>
 </head>
 <body>
-      <nav>
-       <ul>
-            <img src="./images/picture.png" class="logo" /> 
-           
-          <li><a href="../index.html" class="home">Home</a></li>
-          <input class="search-bar" type="text">
-          <button class="search-button">search</button>
-          <li><a href="about.html" class="about">About</a></li>
-          <li><a href="contact.html" class="contact1">Contact</a></li>
-          <li><a href="services.html" class="services">Services</a></li>
-        </ul>
-      </nav>
+    <!--Navbar-->
+    <nav id="navbar">
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" placeholder="Search images">
+
+            </form>
+        </div>
+        <div class="nav-items-container">
+            <a href="page.html" class="nav-items">Home</a>
+            <a href="./pages/Aboutus.html" class="nav-items1">About Us</a>
+            <a class="nav-items2">
+                Categories :
+                <select id="catgory" name="catgory">
+                    <option value="space">Select category</option>
+                    <option value="space">space</option>
+                    <option value="cars">car</option>
+                    <option value="bike">Beaches</option>
+                    <option value="animal">Animal</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="fruit">planets</option>
+                    <option value="fruit">nature</option>
+                    <option value="fruit">monuments</option>
+                    <option value="fruit">Food</option>
+                </select>
+            </a>
+        </div>
+    </nav>
       <div class="card">
         <img id="random-image" src="../images/puppy1.jpg" alt="Random Image">
         <br>
-        <button onclick="generateImage()">Generate Image</button>
+        <button onclick="generateImage()"  >Generate Image</button>
         <br><br>
         <input type="text" id="image-url">
         <br>
