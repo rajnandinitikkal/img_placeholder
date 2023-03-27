@@ -123,6 +123,45 @@ body {
     box-shadow: 1px 1px 2px 3px hwb(0 63% 5%);
 }
 
+.card4 {
+    background-color: white;
+    width: 340px;
+    height: 250px;
+    margin: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    margin-left: 570px;
+    margin-bottom: 40px;
+    border: 1.5px solid rgb(10, 10, 10);
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px 2px hwb(0 63% 5%);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card4:hover {
+    box-shadow: 1px 1px 2px 3px hwb(0 63% 5%);
+}
+
+.card4 img {
+    width: 270px;
+    height: 170px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(60, 58, 58);
+    border-radius: 10px;
+}
+
+.card4 button:hover {
+    background-color: #fc7e7e;
+    box-shadow: 1px 2px 2px 1px black;
+}
+
+.card-name {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
 .card img {
     width: 270px;
     height: 170px;
