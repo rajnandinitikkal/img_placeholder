@@ -6,290 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
     <title>IMAGE PLACE HOLDER</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
-        
-        body {
-            background: url(./images/simple.jpg) no-repeat center center fixed;
-            background-size: cover;
-        }
-        
-        #navbar {
-            background-color: hwb(0 63% 5%);
-            display: flex;
-            align-items: center;
-            position: relative;
-            top: 0px;
-            height: 70px;
-            margin: -5px;
-            margin-top: -2px;
-            width: 100%;
-            font-family: 'Bree Serif', serif;
-            position: absolute;
-        }
-        
-        .search-box {
-            position: relative;
-        }
-        
-        .search-box input {
-            width: 130%;
-            height: 40px;
-            border: none;
-            outline: none;
-            background: #f2f2f2;
-            border-radius: 30px;
-            color: black;
-            font-size: 20px;
-            padding-left: 5px;
-            padding-right: 40px;
-            text-align: center;
-            margin-left: 300px;
-            font-family: 'Bree Serif', serif;
-        }
-        
-        .nav-items {
-            text-decoration: none;
-            margin-left: 180px;
-            padding: 5px;
-            padding-left: 18px;
-            padding-right: 18px;
-            font-size: 25px;
-            color: black;
-            font-family: 'Bree Serif', serif;
-        }
-        
-        .nav-items:hover {
-            background-color: #c437e0;
-            border-radius: 20px;
-            color: #ffe6e6;
-            transition: all 0.4s ease 0s;
-        }
-        
-        .nav-items1 {
-            text-decoration: none;
-            margin-left: 40px;
-            padding: 5px;
-            padding-left: 18px;
-            padding-right: 40px;
-            font-size: 25px;
-            color: black;
-            font-family: 'Bree Serif', serif;
-        }
-        
-        .nav-items1:hover {
-            background-color: #bd46c2;
-            border-radius: 20px;
-            color: #ffe6e6;
-            transition: all 0.4s ease 0s;
-        }
-        
-        .nav-items2 {
-            text-decoration: none;
-            margin-left: 5px;
-            padding: 5px;
-            padding-left: 18px;
-            padding-right: 40px;
-            font-size: 25px;
-            color: black;
-            font-family: 'Bree Serif', serif;
-        }
-        
-        .nav-items2:hover {
-            background-color: #bd46c2;
-            border-radius: 20px;
-            color: #ffe6e6;
-            transition: all 0.4s ease 0s;
-        }
-        
-        .nav-items-container {
-            float: left;
-            margin-left: 300px;
-            width: 100%;
-        }
-        
-        .card {
-            background-color: rgb(210, 222, 228);
-            width: 340px;
-            height: 250px;
-            margin: 20px;
-            justify-content: space-around;
-            padding: 20px;
-            margin-left: 80px;
-            margin-bottom: 40px;
-            border: 2px solid rgb(10, 10, 10);
-            border-radius: 20px;
-            box-shadow: 1px 2px 4px 2px rgba(46, 6, 45, 0.3);
-            display: inline-block;
-            vertical-align: top;
-            text-align: center;
-        }
-        .card:hover{
-            
-            box-shadow: 1px 1px 2px 3px rgb(48, 47, 47);
-        }
-        
-        .card img {
-            width: 270px;
-            height: 170px;
-            margin-bottom: 10px;
-            border: 2px solid rgb(9, 9, 9);
-            border-radius: 10px;
-        }
-        .card img:hover{
-            transform: scale(1.05);
-        }
-        
-        .card button {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            background-color: #f3ecf2;
-            color: rgb(0, 0, 0);
-            padding: 10px 20px;
-            border: 1px double rgb(241, 237, 237);
-            margin-top: 8px;
-            border-radius: 15px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .card button:hover {
-            background-color: #fc7e7e;
-            box-shadow: 1px 2px 2px 1px  black;
-        }
-        
-        .card-name {
-            color: rgb(0, 0, 0);
-            font-size: 20px;
-        }
-        
-        .footer {
-            position: relative;
-            background-color: hwb(0 63% 5%);
-            height: 250px;
-            margin-top: 80px;
-        }
-        
-        .about {
-            position: absolute;
-            top: 25px;
-            margin-left: 50px;
-            color: black;
-        }
-        
-        .about-list {
-            position: absolute;
-            top: 80px;
-            margin-left: 30px;
-            color: black;
-            font-size: 20px;
-        }
-        
-        .help {
-            position: absolute;
-            color: black;
-            margin-left: 400px;
-            top: 25px;
-        }
-        
-        .help-list {
-            position: absolute;
-            color: black;
-            margin-left: 400px;
-            top: 90px;
-            font-size: 20px;
-        }
-        
-        .policy {
-            position: absolute;
-            color: black;
-            margin-left: 620px;
-            top: 25px;
-        }
-        
-        .policy-list {
-            position: absolute;
-            color: black;
-            margin-left: 620px;
-            top: 90px;
-            font-size: 20px;
-        }
-        
-        .social {
-            position: absolute;
-            color: black;
-            margin-left: 800px;
-            top: 25px;
-        }
-        
-        .social-list {
-            position: absolute;
-            color: black;
-            margin-left: 800px;
-            top: 90px;
-            font-size: 20px;
-        }
-        
-        .contribute {
-            position: absolute;
-            color: black;
-            margin-left: 1000px;
-            top: 25px;
-        }
-        
-        .cont_list {
-            position: absolute;
-            color: black;
-            margin-left: 1000px;
-            top: 90px;
-            font-size: 20px;
-        }
-        
-        .cont_list2 {
-            position: absolute;
-            color: black;
-            margin-left: 1200px;
-            top: 90px;
-            font-size: 20px;
-        }
-        
-        .cl {
-            top: 200px;
-            text-decoration: none;
-        }
-        
-        .contact {
-            margin-left: 50px;
-        }
-        
-        .call {
-            text-decoration: none !important;
-        }
-        
-        .anc {
-            text-decoration: none !important;
-            color: black;
-        }
-        
-        .about-2 {
-            position: absolute;
-            top: 25px;
-            margin-left: 1000px;
-            color: black;
-        }
-        
-        .about-list-2 {
-            position: absolute;
-            top: 80px;
-            margin-left: 1000px;
-            color: black;
-            font-size: 20px;
-        }
-    </style>
+
+
+
 </head>
 
 <body>
@@ -306,17 +27,17 @@
             <a href="./pages/Aboutus.html" class="nav-items1">About Us</a>
             <a class="nav-items2">
                 Categories :
-            <select id="catgory" name="catgory">
-                <option value="space">Select category</option>
-                    <option value="space" >space</option>
+                <select id="catgory" name="catgory">
+                    <option value="space">Select category</option>
+                    <option value="space">space</option>
                     <option value="cars">car</option>
-                    <option value="bike" >Beaches</option>
-                    <option value="animal" >Animal</option>
-                    <option value="fruit" >Fruit</option>
-                    <option value="fruit" >planets</option>
-                    <option value="fruit" >nature</option>
-                    <option value="fruit" >monuments</option>
-                    <option value="fruit" >Food</option>
+                    <option value="bike">Beaches</option>
+                    <option value="animal">Animal</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="fruit">planets</option>
+                    <option value="fruit">nature</option>
+                    <option value="fruit">monuments</option>
+                    <option value="fruit">Food</option>
                 </select>
             </a>
         </div>
@@ -373,7 +94,7 @@
         <button href="./categories/food.html">GET IMAGES</button>
     </div>
 
-    <br>
+    
 
     <div class="footer">
         <h2 class="about">CONTACT</h2><br>
@@ -383,11 +104,13 @@
             </a><br>
             <a href="tel:+91-9518301165" class="anc">
                 <img src="./images/call.png" height="30px" alt="Call" />
-                <h class="call">Call: +91 9518301165<br></a>
+                <h class="call">Call: +91 9518301165<br>
+            </a>
 
             <a href="https://goo.gl/maps/XYayxp7jYfVYHPRCA" class="anc">
                 <img src="./images/location.png" height="30px" /> Address: Nagpur
-            </a><br></p>
+            </a><br>
+        </p>
 
 
         <h2 class="help"> HELP</h2>
@@ -409,7 +132,8 @@
                 <img src="./images/github.png" height="30px">&nbsp; Vishal<br></a>
 
             <a href="https://github.com/Neeha0824" class="cl">
-                <img src="./images/github.png" height="30px">&nbsp; Neha</p>
+                <img src="./images/github.png" height="30px">&nbsp; Neha
+        </p>
         </a>
 
 
@@ -421,7 +145,8 @@
                 <img src="./images/github.png" height="30px">&nbsp; Pranay<br></a>
 
             <a href="https://github.com/samikshapingale" class="cl">
-                <img src="./images/github.png" height="30px">&nbsp; Samiksha</p>
+                <img src="./images/github.png" height="30px">&nbsp; Samiksha
+        </p>
         </a>
     </div>
 
