@@ -131,9 +131,9 @@ body {
     border-radius: 10px;
 }
 
-.card button {
+button {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #f3ecf2;
+    background-color: #fc7e7e;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: 1px double rgb(241, 237, 237);

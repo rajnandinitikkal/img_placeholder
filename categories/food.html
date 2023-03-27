@@ -121,10 +121,15 @@
     }
     
     .footer {
+        display: block;
+        align-items: center;
         position: relative;
         background-color: hwb(0 63% 5%);
         height: 250px;
-        margin-top: 20px;
+        margin-top: 80px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .about {
@@ -244,9 +249,10 @@
     }
     
     .img1 {
-        margin-left: 330px;
-        margin-top: 80px;
-        height: 500px;
+        padding-top: 50px;
+        margin-top: 50px;
+        margin-left: 500px;
+        height: 400px;
     }
     
     [type=text] {
@@ -322,7 +328,7 @@
         </div>
     </nav>
 
-    <img id="random-image" src="https://img4.goodfon.com/original/1920x1200/5/df/interer-zhiloe-prostranstvo-kukhnia-stolovaia-gostinaia-hous.jpg" alt="Random Image" class="img1">
+    <img id="random-image" src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Random Image" class="img1">
     <br>
 
     <br>
@@ -338,15 +344,13 @@
     <!-- java scriot code -->
 
     <script>
-        var images = ["https://img4.goodfon.com/original/1920x1200/5/df/interer-zhiloe-prostranstvo-kukhnia-stolovaia-gostinaia-hous.jpg",
-            "https://mirt.ua/uploads/big/roskosnaa-mebel-v-interere.jpeg",
-            "https://img1.goodfon.com/original/1920x1200/1/3b/interer-gostinaya-kamin-divan-5533.jpg",
-            "https://img5.goodfon.com/original/1920x1200/f/fb/interer-gostinaia-kamin-villa-rustic-family-room-stone-firep.jpg",
-            "https://room.bigbadmole.com/wp-content/uploads/2017/02/dizajn-gostinoj-v-klassicheskom-stile-1.jpg",
-            "https://img5.goodfon.com/original/1920x1200/1/99/carnell-house-interer-stil-dizain-roial-gostinaia-kamin-tepl.jpg",
-            "https://img3.goodfon.com/original/1920x1200/b/ae/interer-krasivyy-krasivo.jpg",
-            "https://img1.goodfon.com/original/1920x1200/8/ae/interer-stil-dizayn-dom-3183.jpg",
-
+        var images = ["https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/1247677/pexels-photo-1247677.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/551997/pexels-photo-551997.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2955819/pexels-photo-2955819.jpeg?auto=compress&cs=tinysrgb&w=600",
         ];
 
         function generateImage() {
