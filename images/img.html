@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/HP/Desktop/webpage/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IMAGE PLACE HOLDER</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            background: url(./images/bg1.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        #navbar {
+            background-color: hwb(0 63% 5%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+            height: 70px;
+            margin: -5px;
+            margin-top: -2px;
+            width: 100%;
+            font-family: 'Bree Serif', serif;
+            position: absolute;
+        }
+        
+        .search-box {
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 130%;
+            height: 40px;
+            border: none;
+            outline: none;
+            background: #f2f2f2;
+            border-radius: 30px;
+            color: black;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 40px;
+            text-align: center;
+            margin-left: 300px;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items {
+            text-decoration: none;
+            margin-left: 180px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 18px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items:hover {
+            background-color: #c437e0;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items1 {
+            text-decoration: none;
+            margin-left: 40px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 40px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items1:hover {
+            background-color: #bd46c2;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items2 {
+            text-decoration: none;
+            margin-left: 5px;
+            padding: 5px;
+            padding-left: 18px;
+            padding-right: 40px;
+            font-size: 25px;
+            color: black;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .nav-items2:hover {
+            background-color: #bd46c2;
+            border-radius: 20px;
+            color: #ffe6e6;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .nav-items-container {
+            float: left;
+            margin-left: 300px;
+            width: 100%;
+        }
+        
+        .card {
+            width: 340px;
+            height: 250px;
+            margin: 20px;
+            justify-content: space-around;
+            padding: 20px;
+            margin-left: 80px;
+            margin-bottom: 40px;
+            border: 2px solid rgb(253, 254, 253);
+            border-radius: 20px;
+            box-shadow: 0px 2px 4px rgba(179, 18, 174, 0.3);
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 270px;
+            height: 170px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(9, 9, 9);
+        }
+        
+        .card button {
+            background-color: #f3ecf2;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: 1px double rgb(241, 237, 237);
+            margin-top: 8px;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .card button:hover {
+            background-color: #cf60d5;
+        }
+        
+        .card-name {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .footer {
+            position: relative;
+            background-color: hwb(0 63% 5%);
+            height: 250px;
+            margin-top: 80px;
+        }
+        
+        .about {
+            position: absolute;
+            top: 25px;
+            margin-left: 50px;
+            color: black;
+        }
+        
+        .about-list {
+            position: absolute;
+            top: 80px;
+            margin-left: 30px;
+            color: black;
+            font-size: 20px;
+        }
+        
+        .help {
+            position: absolute;
+            color: black;
+            margin-left: 400px;
+            top: 25px;
+        }
+        
+        .help-list {
+            position: absolute;
+            color: black;
+            margin-left: 400px;
+            top: 90px;
+            font-size: 20px;
+        }
+        
+        .policy {
+            position: absolute;
+            color: black;
+            margin-left: 620px;
+            top: 25px;
+        }
+        
+        .policy-list {
+            position: absolute;
+            color: black;
+            margin-left: 620px;
+            top: 90px;
+            font-size: 20px;
+        }
+        
+        .social {
+            position: absolute;
+            color: black;
+            margin-left: 800px;
+            top: 25px;
+        }
+        
+        .social-list {
+            position: absolute;
+            color: black;
+            margin-left: 800px;
+            top: 90px;
+            font-size: 20px;
+        }
+        
+        .contribute {
+            position: absolute;
+            color: black;
+            margin-left: 1000px;
+            top: 25px;
+        }
+        
+        .cont_list {
+            position: absolute;
+            color: black;
+            margin-left: 1000px;
+            top: 90px;
+            font-size: 20px;
+        }
+        
+        .cont_list2 {
+            position: absolute;
+            color: black;
+            margin-left: 1200px;
+            top: 90px;
+            font-size: 20px;
+        }
+        
+        .cl {
+            top: 200px;
+            text-decoration: none;
+        }
+        
+        .contact {
+            margin-left: 50px;
+        }
+        
+        .call {
+            text-decoration: none !important;
+        }
+        
+        .anc {
+            text-decoration: none !important;
+            color: black;
+        }
+        
+        .about-2 {
+            position: absolute;
+            top: 25px;
+            margin-left: 1000px;
+            color: black;
+        }
+        
+        .about-list-2 {
+            position: absolute;
+            top: 80px;
+            margin-left: 1000px;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" placeholder="Search images">
+
+            </form>
+        </div>
+        <div class="nav-items-container">
+            <a href="file:///C:/Users/HP/Desktop/webpage/page.html" class="nav-items">Home</a>
+            <a href="file:///C:/Users/HP/Desktop/webpage/pages/Aboutus.html" class="nav-items1">About Us</a>
+            <a class="nav-items2">
+                Categories :
+            <select id="catgory" name="catgory">
+                <option value="space">Select category</option>
+                    <option value="space">space</option>
+                    <option value="cars">car</option>
+                    <option value="bike">Beaches</option>
+                    <option value="animal">Animal</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="fruit">planets</option>
+                    <option value="fruit">nature</option>
+                    <option value="fruit">monuments</option>
+                    <option value="fruit">Food</option>
+                </select>
+            </a>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+    <br>
+
+    <div class="card">
+        <img src="./img_files/category1.jpg" alt="Card Image">
+        <p class="card-name">PLANETS</p>
+        <a href="file:///C:/Users/HP/Desktop/webpage/categories/planets.html">
+            <button href="./categories/planets.html">GET IMAGES</button>
+    </a></div><a href="file:///C:/Users/HP/Desktop/webpage/categories/planets.html">
+    <div class="card">
+        <img src="./img_files/category2.jpg" alt="Card Image">
+        <p class="card-name">NATURE</p>
+        <button href="./categories/nature.html">GET IMAGES</button>
+    </div>
+    <div class="card">
+        <img src="./img_files/category3.jpg" alt="Card Image">
+        <p class="card-name">BIRDS</p>
+        <button href="./categories/birds.html">GET IMAGES</button>
+    </div>
+    <div class="card">
+        <img src="./img_files/category4.jpg" alt="Card Image">
+        <p class="card-name">CROPS</p>
+        <button href="./categories/crops.html">GET IMAGES</button>
+    </div>
+    </a><div class="card"><a href="file:///C:/Users/HP/Desktop/webpage/categories/planets.html">
+        <img src="./img_files/category5.jpg" alt="Card Image">
+        <p class="card-name">BEACHES</p>
+        </a><a href="file:///C:/Users/HP/Desktop/webpage/categories/beaches.html">
+            <button href="./categories/beaches.html">GET IMAGES</button>
+    </a></div><a href="file:///C:/Users/HP/Desktop/webpage/categories/beaches.html">
+    <div class="card">
+        <img src="./img_files/category6.jpg" alt="Card Image">
+        <p class="card-name">MONUMENTS</p>
+        <button href="./categories/monuments.html">GET IMAGES</button>
+    </div>
+    <div class="card">
+        <img src="./img_files/category7.jpg" alt="Card Image">
+        <p class="card-name">CITIES</p>
+        <button href="./categories/cities.html">GET IMAGES</button>
+    </div>
+    <div class="card">
+        <img src="./img_files/category8.jpg" alt="Card Image">
+        <p class="card-name">STATUES</p>
+        <button href="./categories/statues.html">GET IMAGES</button>
+    </div>
+    <div class="card">
+        <img src="./img_files/category9.jpg" alt="Card Image">
+        <p class="card-name">INDIAN FOODS</p>
+        <button href="./categories/food.html">GET IMAGES</button>
+    </div>
+
+    <br>
+
+    </a><div class="footer"><a href="file:///C:/Users/HP/Desktop/webpage/categories/beaches.html">
+        <h2 class="about">CONTACT</h2><br>
+        </a><p class="about-list"><a href="file:///C:/Users/HP/Desktop/webpage/categories/beaches.html">
+            </a><a href="mailto:rajnandinitikkal@gmail.com" class="anc">
+                <img src="./img_files/email.png" height="30px" alt="E-mail"> E-mail: rtcwebdesign@gmail.com
+            </a><br>
+            <a href="tel:+91-9518301165" class="anc">
+                <img src="./img_files/call.png" height="30px" alt="Call">
+                <h class="call">Call: +91 9518301165<br></h></a>
+
+            <a href="https://goo.gl/maps/XYayxp7jYfVYHPRCA" class="anc">
+                <img src="./img_files/location.png" height="30px"> Address: Nagpur
+            </a><br></p>
+
+
+        <h2 class="help"> HELP</h2>
+        <p class="help-list">Payments<br> Categories <br>Customer Service <br> FAQ</p>
+
+        <h2 class="policy"> POLICY</h2>
+        <p class="policy-list">Terms Of Use <br> Security <br> Privacy</p>
+
+
+        <h2 class="social"> SOCIAL</h2>
+        <p class="social-list">Facebook<br>Twitter <br>You Tube</p>
+
+        <h2 class="contribute">Contributers</h2>
+        <p class="cont_list">
+            <a href="https://github.com/vaishnaviraykar" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Vaishnavi<br></a>
+
+            <a href="https://github.com/VishalGaikwad11" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Vishal<br></a>
+
+            <a href="https://github.com/Neeha0824" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Neha</a></p><a href="https://github.com/Neeha0824" class="cl">
+        </a>
+
+
+        <p class="cont_list2">
+            <a href="https://github.com/rajnandinitikkal" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Rajnandini<br></a>
+
+            <a href="https://github.com/PRANAYRAJPUT321" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Pranay<br></a>
+
+            <a href="https://github.com/samikshapingale" class="cl">
+                <img src="./img_files/github.png" height="30px">&nbsp; Samiksha</a></p><a href="https://github.com/samikshapingale" class="cl">
+        </a>
+    </div>
+
+
+
+
+</body></html>
